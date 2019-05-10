@@ -5,11 +5,14 @@
     "author": "<kenshinhm@naver.com>",
     "license": "MIT",
     "dependencies": {
-        "graphql-yoga": "^1.17.4"
+        "dotenv": "^8.0.0",
+        "graphql-yoga": "^1.17.4",
+        "@babel/core": "^7.4.4",
+        "@babel/node": "^7.2.2",
+        "@babel/preset-env": "^7.4.4"
     },
     "devDependencies": {
-        "nodemon": "^1.19.0",
-        "babel-cli": "^6.26.0"
+        "nodemon": "^1.19.0"
     },
     "scripts": {
         "dev": "nodemon --exec babel-node src/server.js"
