@@ -1,0 +1,17 @@
+{
+    "name": "instaclone2",
+    "version": "1.0.0",
+    "repository": "https://github.com/jaehyoungyoo/instaclone2",
+    "author": "<kenshinhm@naver.com>",
+    "license": "MIT",
+    "dependencies": {
+        "graphql-yoga": "^1.17.4"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.0",
+        "babel-cli": "^6.26.0"
+    },
+    "scripts": {
+        "dev": "nodemon --exec babel-node src/server.js"
+    }
+}
