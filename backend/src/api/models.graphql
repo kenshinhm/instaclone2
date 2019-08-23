@@ -1,3 +1,5 @@
+# models.graphql is to provide types for graphql
+# copy & paste from datamodel.prisma
 type User {
   id: ID!
   username: String!

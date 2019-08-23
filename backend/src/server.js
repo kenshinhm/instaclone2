@@ -1,5 +1,5 @@
 import { GraphQLServer } from "graphql-yoga";
-import schema from "src/schema.js";
+import schema from "./schema.js";
 import logger from "morgan";
 
 require("dotenv").config();

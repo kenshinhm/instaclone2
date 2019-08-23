@@ -1,3 +1,7 @@
+# datamodel.prisma is a model for prisma cloud server
+# "prisma deploy" will deploy all types to the cloud
+# "prisma generate" will create client endpoint to connect to the cloud
+
 type User {
   id: ID! @id
   username: String! @unique
