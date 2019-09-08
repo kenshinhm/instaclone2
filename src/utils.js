@@ -1,6 +1,7 @@
 import {adjectives, nouns} from "./words";
 import nodemailer from "nodemailer";
 import sgTransport from "nodemailer-sendgrid-transport";
+import jwt from "jsonwebtoken";
 
 export const generateSecret = () => {
     const randomNumber = Math.floor(Math.random() * adjectives.length);
@@ -24,8 +25,10 @@ export const sendSecretMail = (address, secret) => {
         from: "kenshinhm@instaclone2.com",
         to: address,
         subject: "🔒Login Secret for Instaclone2🔒",
-        html: `Hello! Your login secret it ${secret}.<br/>
+        html: `Hello! Your login secret it <strong>${secret}</strong>.<br/>
                Copy paste on the app/website to log in`
     };
     return sendMail(email);
 };
+
+export const generateToken = id => jwt.sign({id}, process.env.JWT_SECRET);
