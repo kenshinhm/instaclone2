@@ -19,6 +19,6 @@ export default {
             const {user} = request;
             const {id: parentId} = parent;
             return user.id === parentId;
-        }
-    }
+        },
+    },
 };
