@@ -2,6 +2,7 @@
 # copy & paste from datamodel.prisma
 type User {
     id: ID!
+    avatar: String
     username: String!
     email: String!
     firstName: String
